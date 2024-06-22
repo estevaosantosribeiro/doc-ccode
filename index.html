@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav fixed-top" style="background-color: rgb(50, 50, 50);">
+            <img class="pivolt-logo" src="./logo.png" alt="logo" width="60px">
+            <div class="d-flex gap-3">
+                <button class="btn-search" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="hamburger"></button>
+                <ul class="nav-list">
+                    <li><a class="link-inicio" href="#">Início </a></li>
+                    <li><a class="link-blocos" href="#blocos">Blocos</a></li>
+                    <li><a class="link-editor" href="#editor">Editor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div style="height: 100px;">
+
+    </div>
+
+
+
+    <main class="hero">
+        <section class="introduction">
+            <img src="logo.png" alt="logo do Ccode">
+            <div class="main-text">
+                <h2>Introdução ao Ccode</h2>
+                <p>Bem-vindo à documentação do Ccode, uma poderosa ferramenta de desenvolvimento que permite a criação de jogos e aplicações interativas de forma simples e intuitiva. O Ccode foi projetado para atender tanto desenvolvedores iniciantes quanto experientes, oferecendo uma interface amigável e recursos avançados que facilitam a implementação de funcionalidades complexas.</p>   
+            </div>
+        </section>
+        <div id="blocos" style="height: 60px;"></div>
+        <div id="editor" style="height: 5px;"></div>
+        <div id="painel">
+            <div class="accordion">
+                <button id="mostrar-blocos" class="accordion-header">
+                    <span>
+                        Sobre os blocos
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+
+                <div class="accordion-body accordion-blocos">
+                    <section class="paineis" id="painel_blocos">
+                        <h5>Criar Objeto</h5>
+                        <p>Primeiro, entre no script que criou. Então, clique no ícone de "+" e depois vá em "Objetos".</p>
+                        <p>Parâmetro "Nome do Objeto": Serve para adicionar um identificador ao objeto criado, para que os outros blocos possam reconhecê-lo.</p>
+                        <p>Parâmetro "Width": Significa largura. Parâmetro "Height": Significa altura. O próprio nome já diz, serve para alterar a largura e altura do objeto.</p>
+                        <p>Parâmetro "Position X" e "Y": Significa posição X e Y. O próprio nome já diz, mostra a posição do objeto.</p>
+                    
+                        <h5>Criar Objeto com Partes de Sprites</h5>
+                        <p>Na mesma tela de objetos, há esse bloco como a segunda opção. Esse bloco é utilizado para criação de animações. Ele recorta uma spritesheet em retângulos.</p>
+                    
+                        <h6>Definir Posição do Objeto</h6>
+                        <ul>
+                            <li>Define a posição do objeto.</li>
+                            <li>Parâmetro "Nome do Objeto": Serve para colocar o nome do objeto que deseja definir a posição.</li>
+                            <li>Parâmetro "Position X" e "Y": Serve para definir a posição do objeto especificado no parâmetro "Nome do Objeto".</li>
+                        </ul>
+                    
+                        <h6>Definir Posição X do Objeto</h6>
+                        <ul>
+                            <li>Parâmetro "Nome do Objeto": Serve para especificar o nome do objeto que deseja definir a posição.</li>
+                            <li>Parâmetro "Posição X": Serve para definir a posição X do objeto especificado no parâmetro "Nome do Objeto".</li>
+                        </ul>
+                    
+                        <h6>Definir Posição Y do Objeto</h6>
+                        <ul>
+                            <li>Parâmetro "Nome do Objeto": Serve para especificar o nome do objeto que deseja definir a posição.</li>
+                            <li>Parâmetro "Posição Y": Serve para definir a posição Y do objeto especificado no parâmetro "Nome do Objeto".</li>
+                        </ul>
+                    
+                        <h6>Definir Tamanho do Objeto</h6>
+                        <ul>
+                            <li>Parâmetro "Nome do Objeto": Serve para especificar o nome do objeto que deseja definir o tamanho.</li>
+                            <li>Parâmetro "Size": Significa tamanho. Serve para manipular o tamanho do objeto especificado no parâmetro "Nome do Objeto".</li>
+                        </ul>
+                    
+                        <h6>Definir Rotação do Objeto</h6>
+                        <ul>
+                            <li>Parâmetro "Nome do Objeto": Serve para especificar o objeto que deseja manipular a rotação.</li>
+                            <li>Parâmetro "Rotação": Serve para manipular a rotação do objeto.</li>
+                        </ul>
+                    
+                        <h5>Parâmetros de Objeto</h5>
+                        <h6>Nome do Objeto:</h6>
+                        <p>Aqui seria o nome do seu objeto, para que os outros blocos possam identificar o objeto criado. É importante nomear os objetos.</p>
+                        <h6>Posição X e Posição Y</h6>
+                        <p>Parâmetro responsável por permitir manipular a posição X e Y de textos, objetos, etc.</p>
+                        <h6>Largura e Altura</h6>
+                        <p>Parâmetro "Largura" e "Altura" serve para manipular a largura e a altura de objetos, textos, etc.</p>
+                        <h6>Rotação</h6>
+                        <p>Serve para manipular a rotação do objeto.</p>
+                        <h6>RGB</h6>
+                        <p>Serve para definir a cor do objeto.</p>
+                    
+                        <h5>Parâmetros de Texto</h5>
+                        <h6>Texto</h6>
+                        <p>Parâmetro "Texto" que normalmente se encontra em blocos que criam textos. Ele define o texto que será mostrado na sua tela.</p>
+                        <h6>Nome</h6>
+                        <p>Serve como identificador para que os outros blocos possam manipular o texto que você criou.</p>
+                        <h6>RGB</h6>
+                        <p>O parâmetro "RGB" serve para definir uma cor ao texto.</p>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header" id="mostrar-editor">
+                    <span>
+                        Editor de expressões
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+
+                <div class="accordion-body accordion-editor">
+                    <section class="paineis" id="painel_editor">
+                        <h5>Variáveis</h5>
+                        <h6>Evento</h6>
+                        <p>Variáveis do tipo evento só pode ser utilizada apenas dentro daquele conjunto de blocos que
+                            ela foi
+                            definida. Ou seja, se você definir essa variável do tipo evento no bloco de quando iniciar e
+                            depois
+                            tentar mencioná-la no bloco de quando tocado, Não será possível pois essa variável foi
+                            definida como
+                            tipo evento assim sendo ela privada somente no bloco que foi definida.</p>
+                        <p>Como você está acessando no editor de expressões, aquele estará todas as variáveis que você
+                            já criou do
+                            tipo evento.</p>
+
+                        <h6>script</h6>
+                        <p>variaveis que ficam no "script", significa que você só pode acessar aquela variavel apenas
+                            neste script
+                            que você criou</p>
+
+                        <h6>Projeto</h6>
+                                <p>Quando existe variaveis no "projeto", a variavel se torna acessivel no projeto
+                                    inteiro, você pode
+                                    acessar a variavel em qual quer pasta de script</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <section class="download">
+            <a href="ccode.apk" download>
+                <i class="fa-solid fa-download"></i>
+                Baixe o Ccode
+            </a>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <hr>
+        <p><strong>Ccode Game Engine Documentation</strong></p>
+        <p>Esta documentação não oficial foi criada por Gustavo Gonsalves
+            Branco, Igor Henrique e Estevão Santos.</p>
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                Links Úteis
+            </h6>
+            <p>
+                <a href="#!" style="color: #a8a8a7;" class="text-decoration-underline">Repositório</a>
+            </p>
+            <p>
+                <a href="#!" style="color: #a8a8a7;" class="text-decoration-underline">Comunidade</a>
+            </p>
+        </div>
+
+
+
+        <div style="color: #a8a8a7;">
+            <strong>Última Atualização:</strong>
+            <p style="color: #a8a8a7;">Junho de 2024</p>
+        </div>
+
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Faça uma busca</h1>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="search" class="form-control" placeholder="O que você está procurando?">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
