@@ -30,9 +30,8 @@ linkEditor.addEventListener('click', (event) => {
     if(!document.querySelector('.accordion-editor').classList.contains('active')){
         if(document.querySelector('.accordion-blocos').classList.contains('active')){
             document.querySelector('.accordion-blocos').classList.remove('active');
-            console.log('por favor aparece ifo');
         } else {
-            console.log('por favor aparece elese');
+            //
         }
         document.querySelector('#mostrar-editor').click();
     } else {
@@ -47,6 +46,5 @@ const btnPesquisar = document.querySelector('#btn-pesquisar');
 
 btnPesquisar.addEventListener('click', () => {
   const pesquisa = inputPesquisa.value;
-  console.log(pesquisa);
 })
 
