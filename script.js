@@ -14,7 +14,11 @@ accordions.forEach(accordion => {
 
 const linkBlocos = document.querySelector('.link-blocos');
 const linkEditor = document.querySelector('.link-editor');
+const linkInicio = document.querySelector('.link-inicio');
 
+linkInicio.addEventListener('click', (event) => {
+  document.querySelector('.hamburger').click();
+})
 linkBlocos.addEventListener('click', (event) => {
     document.querySelector('.hamburger').click();
     if(!document.querySelector('.accordion-blocos').classList.contains('active')){
