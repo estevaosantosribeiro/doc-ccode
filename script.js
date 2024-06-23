@@ -47,5 +47,6 @@ const btnPesquisar = document.querySelector('#btn-pesquisar');
 
 btnPesquisar.addEventListener('click', () => {
   const pesquisa = inputPesquisa.value;
+  console.log(pesquisa);
 })
 

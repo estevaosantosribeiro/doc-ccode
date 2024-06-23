@@ -103,6 +103,10 @@ a {
     transition: 0.3s;
 }
 
+.ccode-logo {
+    margin-left: 5px;
+}
+
 .introduction {
     display: flex;
     flex-direction: column;
