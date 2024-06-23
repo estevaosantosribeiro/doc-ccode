@@ -38,3 +38,10 @@ linkEditor.addEventListener('click', (event) => {
     }
 })
 
+const inputPesquisa = document.querySelector('#pesquisar');
+const btnPesquisar = document.querySelector('#btn-pesquisar');
+
+btnPesquisar.addEventListener('click', () => {
+  const pesquisa = inputPesquisa.value;
+})
+
